@@ -75,7 +75,7 @@
 	\end{figure}
 
 \begin{center}
-	\includegraphics[width=8cm]{logos/biscactus.png}\par\vspace{0.2cm}
+	\includegraphics[width=15cm]{/home/romain_bianchi/5_semestre_5/1_Capteur/ProjetCapteur/Images/TitreCap.jpg}\par\vspace{0.2cm}
 \end{center}
 
  \centering %Centraliser le contenu

@@ -9,19 +9,19 @@
 %----------- Informations du rapport ---------
 
 \unif{HEIG-VD}
-\titre{Titre} %Titre du fichier .pdf
-\cours{Cours} %Nom du cours
-\sujet{Sujet} %Nom du sujet
-\groupe{Groupe} %Nom du groupe
+\titre{Mini-projet} %Titre du fichier .pdf
+\cours{Capteurs} %cours
+\sujet{Capteur de proximité inductif} %Nom du sujet
+%\groupe{Groupe} %Nom du groupe  
 
-\enseignant{Bruce  \textsc{Wayne} \\
-            Tony  \textsc{Stark}} %Nom de l'enseignant
+\enseignant{Michel  \textsc{Demierre} 
+        } %Nom de l'enseignant
 
-\eleves{James   \textsc{Bond} \\
-        James  \textsc{Bond}\\
-        James \textsc{Bond}} %Nom des élèves
+\eleves{Bianchi   \textsc{ Romain} \\
+Larghi  \textsc{ Andrea}
+         } %Nom des élèves
 
-\nom{James Bond, James Bond, James Bond} %nom dans l'entête
+\nom{Bianchi Romain, Larghi Andrea} %nom dans l'entête
 
 %----------- Initialisation -------------------
 
@@ -39,11 +39,12 @@
 %------------ Corps du rapport ----------------
 
 
-\input{Chapitres/ch1.tex}
-\input{Chapitres/ch2.tex}
-\input{Chapitres/ch3.tex}
-\input{Chapitres/ch4.tex}
-\input{Chapitres/ch5.tex}
+\input{Chapitres/1_Intro.tex}
+\input{Chapitres/2_Seance1.tex}
+\input{Chapitres/3_Seance2.tex}
+\input{Chapitres/4_Seance3.tex}
+%\input{Chapitres/5_Seance4.tex}
+\input{Chapitres/6_Conclusion.tex}
 %\input{Chapitres/commandes.tex}
 
 
@@ -57,19 +58,13 @@
     \centering
     \begin{minipage}[b]{0.3\textwidth}
       \centering
-      James Bond\\
-      \includegraphics[height=0.4\textwidth]{logos/arbre.png}
+      Bianchi Romain\\
+      \includegraphics[height=0.4\textwidth]{Images/Bianchi.jpg}
     \end{minipage}
     \hfill
     \begin{minipage}[b]{0.3\textwidth}
       \centering
-      James Bond\\
-      \includegraphics[height=0.4\textwidth]{logos/arbre.png}
-    \end{minipage}
-    \hfill
-    \begin{minipage}[b]{0.3\textwidth}
-      \centering
-      James Bond\\
+      Larghi Andrea\\
       \includegraphics[height=0.4\textwidth]{logos/arbre.png}
     \end{minipage}
   \end{figure}
@@ -82,8 +77,5 @@
 
 % \includepdf[pages=1,pagecommand={\thispagestyle{empty}\vspace*{-3.3cm}\section{SKF 618/4}\label{pdf:skf 618_4}}]{PDF/Louis/618_4 SKF.pdf}
 % \includepdf[pages=2-4]{PDF/Louis/618_4 SKF.pdf}
-
-
-
 
 \end{document}
