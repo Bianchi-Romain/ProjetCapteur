@@ -4,9 +4,101 @@
 
 \subsection{Objectifs}
 
+Le but de cette première séance est de caractériser le capteur de proximité inductif à travers 
+l’analyse de la résistance et l'inductance de la bobine, en fonction de la distance cible-capteur 
+ et de la fréquence. 
+
 \subsection{Méthode}
 
-\subsection{Résultats}
+\begin{enumerate}
+    \item Brancher la maquette sur l'analyseur d'impédance comme montré ci-dessous (cf. fig. \ref{fig: AI});
+    \item Déterminer la distance mécanique initiale et se positionner à 0.5 mm de celle-ci ;
+    \item Enregistrer la mesure de l'appareil qui permet d'obtenir l'impédance ainsi que l'inductance de 
+    la bobine sur un intervalle de 150 kHz à 15 MHz ;
+    \item Répéter l'opération par pas de 0.05 mm jusqu'à atteindre 0.90 mm ce qui totalise 9 mesures.
+\end{enumerate}
+
+\insererfigure{Images/Seance1/AnalyseurImpedance.jpg}{5cm}{analyseur d'impédance}{AI}
+
+\subsection{Caractérisation de la bobine}
+
+\subsubsection{Impédance}
+
+
+Les mesures réalisées avec l'analyseur d'impédance ont été sauvegardées en un total
+de 9 fichiers CSV, un pour chacune des distances. Chaque fichier comporte une colonne propre à
+la fréquence, l'inductance et la résistance. Ainsi, il est possible de déterminer l'impédance relative
+à la fréquence selon les 9 positions de la bobine.\\
+
+
+Impédance de la bobine : 
+
+\begin{equation}
+    Z_b = R_b + j \omega L_b
+\end{equation}
+
+Avec : \\
+$Z_b$, l'impédance de la bobine [$\Omega$];\\
+$R_b$, la résistance de la bobine [$\Omega$];\\
+$L_b$, l'inductance de la bobine;\\
+$\omega$, la pulsation = $ 2 \cdot \pi \cdot f$ [rad/s] ;\\
+f, la fréquence [Hz].\\
+
+L'impédance ainsi déterminée a permis de représenter graphiquement l'inductance et la résistance de 
+la bobine en fonction de la fréquence :
+
+
+\insererfigure{Images/Seance1/Lf.png}{8cm}{Inductance en fonction de la fréquence}{Lf}
+\insererfigure{Images/Seance1/Rf.png}{8cm}{Résistances en fonction de la fréquence}{Rf}
+
+L'allure des courbes représentées sur les graphiques (cf. fig. \ref{fig: Lf} et \ref{fig: Rf})
+correspondent au comportement d'un circuit RLC. Ce résultat est représentatif du montage étudié.
+En effet, la \textbf{R}ésistance et est celle du fil de la bobine, \textbf{L}'inductance est celle 
+de la bobine, le \textbf{C}ondensateur est la capacité relative à la 
+cible et à sa distance.\\
+La fréquence de résonance du circuit peut-être aisément relevée puis-ce qu'il s'agit du passage à 0 
+de l'inductance et le pic de résistance. On relève graphiquement à la 
+position de repos une fréquence de résonance de 6.77 Mhz.\\
+
+L'inductance et la résistance en fonction de la distance ont ensuite été représentés :
+
+\insererfigure{Images/Seance1/Lx.png}{8cm}{Inductance en fonction de la distance}{Lx}
+\insererfigure{Images/Seance1/Rx.png}{8cm}{Résistances en fonction de la distance}{Rx}
+
+Les courbes tracées permettent de déterminer le type de matériau de la cible, ferromagnétique ou 
+non-ferromagnétique. Les figures \ref{fig: Lx} et \ref{fig: Rx} montrent une augmentation de 
+l'inductance et une diminution de la résistance lors de l'éloignement de la cible ce qui correspond 
+au comportement d'un matériau conducteur non-ferromagnétique. 
+De plus, la cible est de couleur "orangée", ce qui permet de conclure qu'elle est en \textbf{cuivre}.\\  
+
+Les régressions réalisées (cf. fig. \ref{fig: Lx} et \ref{Rx}) 
+
+
+
+\insererfigure{Images/Seance1/Zx.png}{8cm}{Impédance de la bobine aux distances}{Zx}
+
+\subsubsection{Sensibilité}
+
+Grâce aux valeurs relevées, il est également possible de déterminer la sensibilité de
+ce capteur qui, pour une position de repos à 0.7 mm s'exprime : 
+
+\begin{equation}\label{eq:s}
+    \left . S_b \right |_{x=0.7} = \left . \frac{\left | \delta \underline{Z_b}\right |}{\delta x} \right |_{x=0.7}
+\end{equation}
+
+Avec: \\
+$S_b$, la sensibilité [$\Omega/mm$];\\
+$\delta Z$, l'écart d'impédance = $Z_{0.75} - Z_{0.65}$ [$\Omega$];\\
+$\delta x$, l'écart de distance  = $x_{0.75} - x_{0.65}$ [mm].
+
+\insererfigure{Images/Seance1/S.png}{8cm}{Sensibilité en fonction de la fréquence}{S}
+
+Le graphique ci-dessus montre la sensibilité calculée avec l'équation \ref{eq:s} en fonction
+de la fréquence, pour une position de repos de 0.7mm. Cette représentation permet d'observer
+qu'un pic sensibilité se forme de 5 à 9 MHz, culminant à 21'235 [$\Omega$/mm] à la fréquence 
+de 6.78 MHz. 
+
+ 
 
 \subsection{Analyse}
 
