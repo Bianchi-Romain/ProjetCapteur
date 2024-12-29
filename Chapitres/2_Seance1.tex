@@ -12,7 +12,7 @@ l’analyse de la résistance et l'inductance de la bobine, en fonction de la di
 
 \begin{enumerate}
     \item Brancher la maquette sur l'analyseur d'impédance comme montré ci-dessous (cf. fig. \ref{fig: AI});
-    \item Déterminer la distance mécanique initiale et se positionner à 0.5 mm de celle-ci ;
+    \item Déterminer la distance de butée et se positionner à 0.5 mm de celle-ci ;
     \item Enregistrer la mesure de l'appareil qui permet d'obtenir la résistance ainsi que l'inductance de 
     la bobine sur un intervalle de 150 kHz à 15 MHz ;
     \item Répéter l'opération par pas de 0.05 mm jusqu'à atteindre 0.90 mm ce qui totalise 9 mesures.
@@ -50,14 +50,14 @@ Représentations schématiques du circuit :
     \begin{minipage}[c]{.50\linewidth}
         \centering
         \rotatebox{0}{\includegraphics[scale=0.6]{Images/Seance1/Sch1.jpg}}
-        \caption{Schéma électrique en série}
+        \caption{Schéma électrique en série }
     \label{fig:SCH1}
     \end{minipage}
     \hfill%
     \begin{minipage}[c]{.50\linewidth}
         \centering
         \rotatebox{0}{\includegraphics[scale=0.9]{Images/Seance1/Sch2.jpg}}
-        \caption{Schéma électrique en parallèle}
+        \caption{Schéma électrique en parallèle }
     \label{fig:SCH2}
     \end{minipage}
 \end{figure}
@@ -71,7 +71,7 @@ la bobine en fonction de la fréquence :
 
 L'allure des courbes représentées sur les graphiques (cf. fig. \ref{fig: Lf} et \ref{fig: Rf})
 correspondent au comportement d'un circuit RLC. Ce résultat est représentatif du montage étudié.
-En effet, la \textbf{R}ésistance et est celle du fil de la bobine, \textbf{L}'inductance est celle 
+En effet, la \textbf{R}ésistance et est celle du fil de la bobine, l'inductance \textbf{L} est celle 
 de la bobine, le \textbf{C}ondensateur est la capacité relative à la 
 cible et à sa distance.\\
 
@@ -102,14 +102,14 @@ qu'à basse fréquence l'inductance est constante ce qui suggère la présence d
  %   \end{minipage}
 %\end{figure}
 
-Il est enfin possible de constater qu'en basse fréquence (140-160 kHz) les différentes courbes évoluent
+Il est enfin possible de constater qu'en basses fréquences (140-160 kHz) les différentes courbes évoluent
 de manière linéaire. \\
 
 
 
 
 
-L'inductance et la résistance à 150 kHz en fonction de la distance ont ensuite été représentés :
+L'inductance et la résistance à 150 kHz en fonction de la distance ont ensuite été représentées :
 
 \insererfigure{Images/Seance1/Lx.png}{8cm}{Inductance en fonction de la distance}{Lx}
 \insererfigure{Images/Seance1/Rx.png}{8cm}{Résistances en fonction de la distance}{Rx}
@@ -118,7 +118,8 @@ Les courbes tracées permettent de déterminer le type de matériau de la cible,
 non-ferromagnétique. Les figures \ref{fig: Lx} et \ref{fig: Rx} montrent une augmentation de 
 l'inductance et une diminution de la résistance lors de l'éloignement de la cible ce qui correspond 
 au comportement d'un matériau conducteur non-ferromagnétique. 
-De plus, la cible est de couleur "orangée", ce qui permet de conclure qu'elle est en \textbf{cuivre}.\\  
+De plus, la cible est de couleur orangée et comportant des marques d'oxydation, ce qui permet 
+de conclure qu'elle est en \textbf{cuivre}.\\  
 
 %Les régressions réalisées (cf. fig. \ref{fig: Lx} et \ref{fig: Rx}) 
 
@@ -127,7 +128,7 @@ L'impédance de la bobine aux différentes distrances pour une fréquence de 150
 
 \insererfigure{Images/Seance1/Zx.png}{8cm}{Impédance de la bobine aux distances}{Zx}
 
-La figure \ref{fig: Zx} montre que l'impédance évolue de manière "quasi" parfaitement linéaire, avec une 
+La figure \ref{fig: Zx} montre que l'impédance évolue de manière "quasi" linéaire, avec une 
 variance de 0.9999. On remaque toute fois que la distance entre les point ne sont pas les mêmes. 
 Plus la cible s'éloigne, plus les points se rapprochent et la sensibilité diminue (eq :\ref{eq:s}).
 Ceci montre les limites de ce système, car si la sensibilité est trop faible alors les valeurs relevées
@@ -167,9 +168,10 @@ Résumer des résultats :
     \item Le matériau constituant la cible est le cuivre;
     \begin{itemize}
         \item Comportement conducteur non-ferromagnétique;
-        \item Couleur "orangée".
+        \item Couleur orangée.
     \end{itemize}
-    \item Pour une fréquence de 150 kHz on observe une progression linéaire de l'impédance 
+    \item Pour une fréquence de 150 kHz on observe une progression linéaire de l'impédance en selon
+    la position de la cible;
     \item La fréquence de résonance du capteur est de 6.78 MHz;
     \begin{itemize}
         \item Passage à 0 de l'inductance et pic de résistance (cf. fig. \ref{fig: Lf} et \ref{fig: Rx})
