@@ -41,27 +41,48 @@ Les filtres passe-bas a plusieurs utilités :
 
 \subsection{Méthode}
 
-
+\subsubsection{Multiplicateur}
 \begin{itemize}
-    \item Montage;
+    \item Montage :
     \begin{itemize}
         \item Le jumper J6 doit être monté;
         \item Le jumper J3 doit être positionné sur les pins 2 et 3 du PCB;
         \item Brancher la sortie $U_{mult}$ à l'oscilloscope;
         \item Alimenter le PCB à -12 et 12 V;
         \item Alimenter $U_{mod}'$ avec un sinus 1 Vp;
-        \item Alimenter $U_{p}$ avec un signal carré 0-5 V;
+        \item Alimenter $U_{p}$ avec un signal carré 0-5 V.
     \end{itemize}
 
     \insererfigure{Images/Seance3/Mt2.jpg}{5cm}{Montage réalisé}{Mt}
 
-    \item Mesures (Multiplicateur);
+    \item Mesures :
     \begin{enumerate}
         \item Régler le signal $U_{mod}'$ à 100 kHz;
         \item Faire varier le déphasage de $U_{p}$ de 0 à 180° par pas de 20°;
         \item Réeffectuer l'étape 2 pour une fréquence  $U_{mod}'$ de 300 kHz.
     \end{enumerate}
 
+\end{itemize}
+
+\subsubsection{Filtrage}
+
+\begin{itemize}
+    \item Montage :
+    \begin{itemize}
+        \item Réaliser le montage du filtre ci-dessous;
+        \item $R_{14}$ = 0 et $C_6$ = nc;
+        \item $R_{10}$ = $R_{13}$ = $\approx$ 10 k$\Omega$.
+    \end{itemize}
+
+    \insererfigure{Images/Seance3/Filtre.jpg}{4cm}{Filtre RC}{Filtre}
+Il serait possible d'obtenir un filtre d'ordre 2, il suffit de rajouter une capacité $C_6$ de 10 nF.\\
+
+    \item Mesures :
+    \begin{enumerate}
+        \item Relever la tension $U_{out}$ du démodulateur sur le multimètre, pour les mêmes déphasages
+        que pour la manipulation précédente.
+        
+    \end{enumerate}
 \end{itemize}
 
 \subsection{Multiplicateur}
@@ -72,6 +93,8 @@ ne montrer que les déphasages de 0° 60° 120° et 180° afin de ne pas surchar
  \textcolor{magenta}{$U_{mod}'$} le 3 et \textcolor{green}{$U_{p}$} sur le 4. 
 
 \subsubsection{Fréquence de 100 kHz}
+
+
 
 \begin{figure}[H]
     \begin{minipage}[c]{.50\linewidth}
@@ -156,7 +179,41 @@ l’utilisation d’une fréquence de 150~kHz pour les manipulations précédent
 
 \subsection{Filtrage}
 
+\subsubsection{Représentation des signaux}
 
+Ci-dessous sont représentés les signaux aux différents déphasages relevés à l'oscilloscope. 
+
+\begin{figure}[H]
+    \begin{minipage}[c]{.50\linewidth}
+        \centering
+        \rotatebox{0}{\includegraphics[scale=0.4]{Images/Seance3/partie2/TEK00000.PNG}}
+        \caption{Filtre avec RC avec déphasage de 0° }
+    \label{fig:f1}
+    \end{minipage}
+    \hfill%
+    \begin{minipage}[c]{.50\linewidth}
+        \centering
+        \rotatebox{0}{\includegraphics[scale=0.4]{Images/Seance3/partie2/TEK00003.PNG}}
+       \caption{Filtre avec RC avec déphasage de 60°}
+ \label{fig:f2}
+    \end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+    \begin{minipage}[c]{.50\linewidth}
+        \centering
+        \rotatebox{0}{\includegraphics[scale=0.4]{Images/Seance3/partie2/TEK00006.PNG}}
+        \caption{Filtre avec RC avec déphasage de 120°}
+    \label{fig:f3}
+    \end{minipage}
+    \hfill%
+    \begin{minipage}[c]{.50\linewidth}
+        \centering
+        \rotatebox{0}{\includegraphics[scale=0.4]{Images/Seance3/partie2/TEK00009.PNG}}
+       \caption{Filtre avec RC avec déphasage de 180°}
+ \label{fig:f4}
+    \end{minipage}
+\end{figure}
 
 
 
