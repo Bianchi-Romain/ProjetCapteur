@@ -4,9 +4,12 @@
 
 \subsection{Objectifs}
 
-Le but de cette première séance est de caractériser le capteur de proximité inductif à travers 
-l’analyse de la résistance et l'inductance de la bobine, en fonction de la distance cible-capteur 
- et de la fréquence. 
+Le but de cette première séance est de caractériser l'impédance du capteur en fonction de la distance
+à laquelle se trouve la cible.
+
+%de caractériser le capteur de proximité inductif à travers 
+%l’analyse de la résistance et l'inductance de la bobine, en fonction de la distance cible-capteur 
+% et de la fréquence. 
 
 \subsection{Méthode}
 
@@ -14,7 +17,7 @@ l’analyse de la résistance et l'inductance de la bobine, en fonction de la di
     \item Brancher la maquette sur l'analyseur d'impédance comme montré ci-dessous (cf. fig. \ref{fig: AI});
     \item Déterminer la distance de butée et se positionner à 0.5 mm de celle-ci ;
     \item Enregistrer la mesure de l'appareil qui permet d'obtenir la résistance ainsi que l'inductance de 
-    la bobine sur un intervalle de 150 kHz à 15 MHz ;
+    la bobine sur un intervalle de 100 kHz à 15 MHz ;
     \item Répéter l'opération par pas de 0.05 mm jusqu'à atteindre 0.90 mm ce qui totalise 9 mesures.
 \end{enumerate}
 
@@ -66,8 +69,8 @@ L'impédance ainsi déterminée a permis de représenter graphiquement l'inducta
 la bobine en fonction de la fréquence :
 
 
-\insererfigure{Images/Seance1/Lf.png}{8cm}{Inductance en fonction de la fréquence}{Lf}
-\insererfigure{Images/Seance1/Rf.png}{8cm}{Résistances en fonction de la fréquence}{Rf}
+\insererfigure{Images/Seance1/Lf2.png}{8cm}{Inductance en fonction de la fréquence}{Lf}
+\insererfigure{Images/Seance1/Rf2.png}{8cm}{Résistances en fonction de la fréquence}{Rf}
 
 L'allure des courbes représentées sur les graphiques (cf. fig. \ref{fig: Lf} et \ref{fig: Rf})
 correspondent au comportement d'un circuit RLC. Ce résultat est représentatif du montage étudié.
@@ -128,11 +131,11 @@ L'impédance de la bobine aux différentes distrances pour une fréquence de 150
 
 \insererfigure{Images/Seance1/Zx.png}{8cm}{Impédance de la bobine aux distances}{Zx}
 
-La figure \ref{fig: Zx} montre que l'impédance évolue de manière "quasi" linéaire, avec une 
-variance de 0.9999. On remaque toute fois que la distance entre les point ne sont pas les mêmes. 
+La figure \ref{fig: Zx} montre que l'impédance évolue de manière "quasi" linéaire, avec un coefficient 
+de détermination $R^2$ = 0.9999. On remarque toute fois que la distance entre les point ne sont pas les mêmes. 
 Plus la cible s'éloigne, plus les points se rapprochent et la sensibilité diminue (eq :\ref{eq:s}).
 Ceci montre les limites de ce système, car si la sensibilité est trop faible alors les valeurs relevées
-ne sont plus tolérables.
+ne sont plus détectables.
 \subsubsection{Sensibilité}
 
 Grâce aux valeurs relevées, il est également possible de déterminer la sensibilité de
