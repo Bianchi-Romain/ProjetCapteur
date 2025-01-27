@@ -1,1 +1,62 @@
 \section{Séance 5 - Réglage de la sensibilité}
+\subsection{Objectif}
+Durant la séance 4, la valeur du déphasage a été calculée pour optimiser la linéarité
+de la réponse du système. Il a également été possible de calculer la sensibilité du système
+à ce déphasage.
+\vspace{0.2cm}
+
+Le but de cette séance sera donc de modifier le gain du système pour obtenir une sensibilité de
+10 V/mm. L'offset du système sera ensuite ajusté pour obtenir une tension de 0 V à la position
+de repos.
+\vspace{0.2cm}
+
+\subsection{Théorie}
+Pour obtenir la sensibilité souhaitée, il convient de modifier le gain du filtre passe bas
+de notre système.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=10cm]{Images/Seance5/Gain système.png}
+    \caption{Circuit du filtre passe bas}
+    \label{fig:FPB}
+\end{figure}
+
+La résistance $R_{14}$ ayant une valeur de 0 $\Omega$, le gain de ce système est défini comme suit :
+
+\begin{equation*}
+     |K| = \frac{R_{10}}{R_{13}}
+\end{equation*}
+
+Il est cependant également possible d'écrire le gain en fonction de l'entrée et de la sortie du
+système :
+
+\begin{equation*}
+    |K| = \frac{S_{out}}{S_{in}}
+\end{equation*}
+
+Connaissant la sensibilité d'entrée ainsi que celle voulue en sortie, il est possible, en fixant
+la valeur d'une résistance, de calculer la valeur de la seconde. La valeur de R$_{10}$ a été fixée
+à 10 k$\Omega$. Il est donc possible de calculer le tableau suivant:
+
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|l|rl|}
+    \cline{1-3}
+    S$_{in}$  & 0,3023    & V/mm    \\ \hline
+    S$_{out}$ & 10         & V/mm    \\ \hline
+    K    & 33,08 &  \\ \hline
+    R$_{10}$  & 10      & k$\Omega$     \\ \hline
+    R$_{13}$  & 302,3     & $\Omega$     \\ \hline
+    \end{tabular}
+    \caption{Résumé des valeurs calculées}
+    \label{tab:ResumeValeurs}
+    \end{table}
+
+Pour l'ajustement de l'offset, il sera uniquement fait de manière expérimentale.
+
+\subsection{Manipulation}
+Dans un premier temps, deux résistance ont été mises en série
+\subsection{Analyse}
+
+\subsection{Conclusion}
