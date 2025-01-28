@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {french}{}
 \contentsline {table}{\numberline {1}{\ignorespaces Liste du matériel\relax }}{1}{table.caption.5}%
@@ -8,3 +9,14 @@
 \contentsline {table}{\numberline {6}{\ignorespaces Résumé des valeurs calculées\relax }}{23}{table.caption.40}%
 \contentsline {table}{\numberline {7}{\ignorespaces Résumé des valeurs calculées\relax }}{23}{table.caption.41}%
 \contentsline {table}{\numberline {8}{\ignorespaces Résumé des valeurs calculées\relax }}{28}{table.caption.46}%
+=======
+\babel@toc {french}{}\relax 
+\contentsline {table}{\numberline {1}{\ignorespaces Liste du matériel}}{1}{table.caption.5}%
+\contentsline {table}{\numberline {2}{\ignorespaces Résumé des fréquences de résonance}}{10}{table.caption.19}%
+\contentsline {table}{\numberline {3}{\ignorespaces Résistance calculée et utilisée}}{11}{table.caption.20}%
+\contentsline {table}{\numberline {4}{\ignorespaces Tensions de sortie}}{12}{table.caption.23}%
+\contentsline {table}{\numberline {5}{\ignorespaces Tension aux différents déphasages et distances}}{20}{table.caption.36}%
+\contentsline {table}{\numberline {6}{\ignorespaces Résumé des valeurs calculées}}{23}{table.caption.40}%
+\contentsline {table}{\numberline {7}{\ignorespaces Résumé des valeurs calculées}}{23}{table.caption.41}%
+\contentsline {table}{\numberline {8}{\ignorespaces Résumé des valeurs calculées}}{28}{table.caption.46}%
+>>>>>>> 2e98d3e1b93091057907b91c28f49926a5d38bd5

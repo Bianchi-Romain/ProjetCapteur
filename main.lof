@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {french}{}
 \contentsline {figure}{\numberline {1}{\ignorespaces analyseur d'impédance\relax }}{2}{figure.caption.6}%
@@ -41,3 +42,47 @@
 \contentsline {figure}{\numberline {39}{\ignorespaces Tension de sortie à déphasage 120°\relax }}{25}{figure.caption.43}%
 \contentsline {figure}{\numberline {40}{\ignorespaces Tension de sortie à déphasage 300°\relax }}{26}{figure.caption.44}%
 \contentsline {figure}{\numberline {41}{\ignorespaces Tension de sortie à déphasage 300°, avec enveloppe\relax }}{27}{figure.caption.45}%
+=======
+\babel@toc {french}{}\relax 
+\contentsline {figure}{\numberline {1}{\ignorespaces analyseur d'impédance}}{2}{figure.caption.6}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Schéma électrique en série }}{2}{figure.caption.7}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Schéma électrique en parallèle }}{2}{figure.caption.7}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Inductance en fonction de la fréquence}}{3}{figure.caption.8}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Résistances en fonction de la fréquence}}{3}{figure.caption.9}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Inductance en fonction de la distance}}{4}{figure.caption.10}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Résistances en fonction de la distance}}{4}{figure.caption.11}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Impédance de la bobine aux distances}}{5}{figure.caption.12}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Sensibilité en fonction de la fréquence}}{6}{figure.caption.13}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Schéma du circuit résonant}}{7}{figure.caption.14}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Schéma du circuit résonant parallèle}}{8}{figure.caption.15}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Schéma du circuit résonant parallèle}}{8}{figure.caption.16}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Montage}}{9}{figure.caption.17}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Recherche de la fréquence de résonance}}{10}{figure.caption.18}%
+\contentsline {figure}{\numberline {15}{\ignorespaces Représentation dans le plan complexe de l'impédance}}{11}{figure.caption.21}%
+\contentsline {figure}{\numberline {16}{\ignorespaces Représentation dans le plan complexe de la fonction de transfert}}{12}{figure.caption.22}%
+\contentsline {figure}{\numberline {17}{\ignorespaces Schéma avec multiplicateur et filtre}}{13}{figure.caption.24}%
+\contentsline {figure}{\numberline {18}{\ignorespaces Schéma du multiplicateur}}{14}{figure.caption.25}%
+\contentsline {figure}{\numberline {19}{\ignorespaces Montage réalisé}}{15}{figure.caption.26}%
+\contentsline {figure}{\numberline {20}{\ignorespaces Filtre RC}}{15}{figure.caption.27}%
+\contentsline {figure}{\numberline {21}{\ignorespaces $U_{p}$, $U_{mod}'$ et $U_{mult}$ avec un déphasage de 0° à 100 kHz }}{16}{figure.caption.28}%
+\contentsline {figure}{\numberline {22}{\ignorespaces $U_{p}$, $U_{mod}'$ et $U_{mult}$ avec un déphasage de 60° à 100 kHz}}{16}{figure.caption.28}%
+\contentsline {figure}{\numberline {23}{\ignorespaces $U_{p}$, $U_{mod}'$ et $U_{mult}$ avec un déphasage de 120° à 100 kHz }}{16}{figure.caption.29}%
+\contentsline {figure}{\numberline {24}{\ignorespaces $U_{p}$, $U_{mod}'$ et $U_{mult}$ avec un déphasage de 180° à 100 kHz}}{16}{figure.caption.29}%
+\contentsline {figure}{\numberline {25}{\ignorespaces $U_{p}$, $U_{mod}'$ et $U_{mult}$ avec un déphasage de 0° à 300 kHz }}{16}{figure.caption.30}%
+\contentsline {figure}{\numberline {26}{\ignorespaces $U_{p}$, $U_{mod}'$ et $U_{mult}$ avec un déphasage de 60° à 300 kHz}}{16}{figure.caption.30}%
+\contentsline {figure}{\numberline {27}{\ignorespaces $U_{p}$, $U_{mod}'$ et $U_{mult}$ avec un déphasage de 120° à 300 kHz }}{16}{figure.caption.31}%
+\contentsline {figure}{\numberline {28}{\ignorespaces $U_{p}$, $U_{mod}'$ et $U_{mult}$ avec un déphasage de 180° à 300 kHz}}{16}{figure.caption.31}%
+\contentsline {figure}{\numberline {29}{\ignorespaces Filtre avec RC avec déphasage de 0° }}{17}{figure.caption.32}%
+\contentsline {figure}{\numberline {30}{\ignorespaces Filtre avec RC avec déphasage de 60°}}{17}{figure.caption.32}%
+\contentsline {figure}{\numberline {31}{\ignorespaces Filtre avec RC avec déphasage de 120°}}{17}{figure.caption.33}%
+\contentsline {figure}{\numberline {32}{\ignorespaces Filtre avec RC avec déphasage de 180°}}{17}{figure.caption.33}%
+\contentsline {figure}{\numberline {33}{\ignorespaces Tension de sortie théorique et mesurée}}{18}{figure.caption.34}%
+\contentsline {figure}{\numberline {34}{\ignorespaces Montage - Séance 4 }}{19}{figure.caption.35}%
+\contentsline {figure}{\numberline {35}{\ignorespaces Réponse du capteur - séance 4}}{20}{figure.caption.37}%
+\contentsline {figure}{\numberline {36}{\ignorespaces Régressions selon le déphasage}}{21}{figure.caption.38}%
+\contentsline {figure}{\numberline {37}{\ignorespaces Circuit du filtre passe bas}}{22}{figure.caption.39}%
+\contentsline {figure}{\numberline {38}{\ignorespaces Tension de sortie à déphasage nul}}{24}{figure.caption.42}%
+\contentsline {figure}{\numberline {39}{\ignorespaces Tension de sortie à déphasage 120°}}{25}{figure.caption.43}%
+\contentsline {figure}{\numberline {40}{\ignorespaces Tension de sortie à déphasage 300°}}{26}{figure.caption.44}%
+\contentsline {figure}{\numberline {41}{\ignorespaces Tension de sortie à déphasage 300°, avec enveloppe}}{27}{figure.caption.45}%
+>>>>>>> 2e98d3e1b93091057907b91c28f49926a5d38bd5
