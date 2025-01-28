@@ -141,6 +141,95 @@ La sensibilité devrait donc être de 9.31 V/mm.
 Bien qu'il soit possible de voir que la tension réelle en fonction de la position n'est pas 
 parfaitement linéaire, cette dernière, à contrario de la première itération, s'en approche assez
 pour être utilisable.
-\subsection{Analyse}
 
+\subsection{Analyse}
+Dans un premier temps, la première manipulation. Comme brièvement expliqué précédemment, la tension
+de sortie en fonction de la distance à la cible n'est pas comme attendue. Lorsque l'erreur de
+non-linéarité est calculée pour ces valeurs, la valeur suivante est trouvée:
+\begin{equation*}
+    NL_{\phi=0} = 21.6\% 
+\end{equation*}
+
+Ce qui diffère des 0.47\% attendus de manière significative. Cette différence indique que les 
+observations faites durant la séance 4 sont probablement correctes, respectivement que les valeurs
+obtenues sont aberrantes.
+\vspace{0.2cm}
+
+En ce qui concerne la seconde itération, la courbe est relativement linéaire. Il est cependant
+possible d'observer une certaine courbure sur la droite. Il est donc probable que le déphasage
+trouvé par itération ne soit pas le déphasage optimal. Dans l'idéal, il faudrait refaire la
+séance 4 afin d'avoir un nouveau set de données permettant de déterminer proprement le déphasage
+optimal.
+\vspace{0.2cm}
+
+La sensibilité étant
+équivalente à la pente de la droite, il est possible de savoir, grâce à la régression linéaire,
+que la sensibilité est de 10.011 V/mm. Malgré une expérimentation un peu hâtive, il est possible
+de remarquer que la sensibilité est proche de celle voulue. Cela est probablement dû à la chance.
+En effet, les séries de résistances ayant une certaine tolérance, il est possible que $R_{10}$ ait
+été plus élevée et $R_{13}$ plus basse qu'attendu. Cette légère différence aurait pu augmenter le
+gain, ce qui a permis d'avoir la sensibilité voulue.
+\vspace{0.2cm}
+
+Le calcul de la non-linéarité donne la valeur suivante :
+\begin{equation*}
+    NL_{\phi =300} = 3.805\% 
+\end{equation*}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=15cm]{Images/Seance5/u_out_enveloppe.png}
+    \caption{Tension de sortie à déphasage 300°, avec enveloppe}
+    \label{fig:uoutblblb}
+\end{figure}
+
+
+Il est donc possible de considérer que la courbe réelle se trouve dans une enveloppe définie par
+l'équation suivante:
+
+\begin{equation}
+    U_{out} =  S_{\phi =300} \cdot x + O_{ffset} (1 \pm NL_{\phi =300}) = 10.011\cdot x - 7.071(1 \pm \frac{3.805}{100})
+\label{eq:1234}
+\end{equation}
+
+Ce qui permet de définir la position en fonction de la tension de sortie :
+
+\begin{equation}
+    x = 0.0999 \cdot U_{out}+ 0.7063 \pm 0.0269
+    \label{eq:234}
+\end{equation}
+
+Cette équation indique plusieurs points intéressants:
+\begin{itemize}
+    \item Pour une tension mesurée à 0 V, la distance relevée est de 0.7063 $\pm$ 0.0269 mm. Cela
+         indique la position de repos.
+    \item La sensibilité est de 0.0999 mm/V.
+    \item Il existe une incertitude sur la position de 0.0269 mm. 
+\end{itemize}
+\vspace{0.2cm}
+
+L'équation \ref{eq:1234} étant valable pour des distances à la cible situées entre 0.5 mm et 0.9 mm,
+l'équation \ref{eq:234} sera valable pour des valeurs de tensions comprises entre -2.1 V et 2 V.
 \subsection{Conclusion}
+
+Cette séance a permis de déterminer que les valeurs prises durant la séance 4 sont aberrantes.
+Une recherche itérative a cependant permis de déterminer un déphasage quasi-idéal, trouvé à 300°.
+\vspace{0.2cm}
+
+De plus, il a été possible de donner les spécifications intéressantes pour un utilisateur du capteur
+couplé à ce conditionneur, pour une cible en cuivre.
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|l|r|}
+    \cline{1-2}
+    S   & 0.0999 mm/V   \\ \hline
+    $O_{ffset}$   & 0.7063  mm        \\ \hline
+    $I_{ncertitude}$ & $\pm$0.0269 mm \\ \hline
+    Plage de distance & [0.5 : 0.9] mm \\ \hline
+    Plage de sortie & [-2.1 : 2.0] V\\ \hline
+    \end{tabular}
+    \caption{Résumé des valeurs calculées}
+    \label{tab:ResumeValeurs}
+\end{table}
+
