@@ -25,14 +25,15 @@ d'un signal carré $U_p$ vers le sélecteur qui prend la valeur :
     \item B : -1 quand l'amplitude du signal carré est nulle. 
 \end{itemize}
 
-\subsubsection{Le filtre}
+\subsubsection{Le filtre} \label{filtre}
 
 Le filtre passe-bas a plusieurs utilités :
 
 \begin{itemize}
-    \item Il supprime la composante 2$f_0$ provenant de la multiplication;\\
+    \item Il supprime la composante 2$f_0$ provenant de la multiplication ;\\
    $ A \sin(\omega t) \cdot \sin(\omega t) = \frac{A}{2} \left( \cos(\varphi) - \cos(2\omega t + \varphi) \right)$
-    \item Il supprimes des harmoniques du signal carré;
+   donant ainsi l'expression $\frac{A}{2} \cdot cos(\phi)$ ;
+    \item Il supprimes des harmoniques du signal carré ;
     \item Il diminue le bruit en ne laissant que la bande passante utile.
     
 \end{itemize}
@@ -173,7 +174,8 @@ Cette inversion se produit indépendamment de la valeur du déphasage. \\
 
 Des différences apparaissent toutefois entre les séries de mesures à 100~kHz et à 300~kHz. \\  
 À 300~kHz, l’électronique peine à suivre : le signal \( U_{mult} \) est déphasé par rapport au signal \( U_{mod}' \),  
-et de fortes aberrations sont visibles lors des flancs du signal \( U_{p} \). \\  
+et de fortes aberrations sont visibles lors des flancs du signal \( U_{p} \) en raison du slow rate et 
+du filtre passe bas. \\  
 Une fréquence de 300~kHz est donc trop élevée pour ce système, ce qui justifie  
 l’utilisation d’une fréquence de 150~kHz pour les manipulations précédentes.
 
@@ -226,7 +228,7 @@ celle-ci à mesure que le déphasage
 \insererfigure{Images/Seance3/Uout.png}{7cm}{Tension de sortie théorique et mesurée}{Mt}
 
 La tension de sortie mesurée est représentée avec la tension de sortie théorique. Il est possible
-de voir que les deux courbes ont la même allure, celle d'un cosinus. Cependant, l'amplitude de 
+de voir que les deux courbes ont la même allure, celle d'un cosinus (voir eq. §\ref{filtre}). Cependant, l'amplitude de 
 tension mesurée est inférieure à celle calculée. Cette différence pourrait s'expliquer par une 
 imperfection de démodulateur.
 
