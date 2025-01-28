@@ -25,14 +25,15 @@ d'un signal carré $U_p$ vers le sélecteur qui prend la valeur :
     \item B : -1 quand l'amplitude du signal carré est nulle. 
 \end{itemize}
 
-\subsubsection{Le filtre}
+\subsubsection{Le filtre} \label{filtre}
 
 Le filtre passe-bas a plusieurs utilités :
 
 \begin{itemize}
-    \item Il supprime la composante 2$f_0$ provenant de la multiplication;\\
+    \item Il supprime la composante 2$f_0$ provenant de la multiplication ;\\
    $ A \sin(\omega t) \cdot \sin(\omega t) = \frac{A}{2} \left( \cos(\varphi) - \cos(2\omega t + \varphi) \right)$
-    \item Il supprimes des harmoniques du signal carré;
+   donant ainsi l'expression $\frac{A}{2} \cdot cos(\phi)$ ;
+    \item Il supprimes des harmoniques du signal carré ;
     \item Il diminue le bruit en ne laissant que la bande passante utile.
     
 \end{itemize}
@@ -227,7 +228,7 @@ celle-ci à mesure que le déphasage
 \insererfigure{Images/Seance3/Uout.png}{7cm}{Tension de sortie théorique et mesurée}{Mt}
 
 La tension de sortie mesurée est représentée avec la tension de sortie théorique. Il est possible
-de voir que les deux courbes ont la même allure, celle d'un cosinus. Cependant, l'amplitude de 
+de voir que les deux courbes ont la même allure, celle d'un cosinus (voir eq. §\ref{filtre}). Cependant, l'amplitude de 
 tension mesurée est inférieure à celle calculée. Cette différence pourrait s'expliquer par une 
 imperfection de démodulateur.
 

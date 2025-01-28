@@ -56,7 +56,91 @@ la valeur d'une résistance, de calculer la valeur de la seconde. La valeur de R
 Pour l'ajustement de l'offset, il sera uniquement fait de manière expérimentale.
 
 \subsection{Manipulation}
-Dans un premier temps, deux résistances ont été mises en série
+Dans un premier temps, deux résistances ont été mises en série afin d'obtenir la résistance
+R$_{13}$. Cette nouvelle résistance a été installée sur l'emplacement R$_{13}$
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|l|r|}
+    \cline{1-2}
+    R$_{1}$   & 270 $\Omega$   \\ \hline
+    R$_{2}$   & 32  $\Omega$        \\ \hline
+    R$_{1+2}$ & 302 $\Omega$ \\ \hline
+    R$_{13_{mes}}$ & 298.7 $\Omega$ \\ \hline
+    \end{tabular}
+    \caption{Résumé des valeurs calculées}
+    \label{tab:ResumeValeurs}
+\end{table}
+
+Le gain réel sera donc:
+\begin{equation*}
+    |K_{reel}| = \frac{R_{10}}{R_{13_{mes}}} = 33.48   
+\end{equation*}
+
+Qui donnera une sensibilité réelle en sortie de conditionneur de:
+
+\begin{equation*}
+    S_{out} = |K_{reel}|\cdot S_{in} =10.12 \text{ V/mm} 
+\end{equation*}
+\vspace{0.2cm}
+
+Le jumper J6 a été enlevé puis le potentiomètre a été utilisé pour régler l'offset sur la tension 
+de sortie. Pour une distance à la cible de 0.7 mm, une tension de sortie de 0 V est souhaitée.
+\vspace{0.2cm}
+
+La tension de sortie a ensuite été mesurée à toutes les positions, pour un déphasage de 0°.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=15cm]{Images/Seance5/uout1.png}
+    \caption{Tension de sortie à déphasage nul}
+    \label{fig:uout1}
+\end{figure}
+
+En première instance, il est possible d'observer que la tension de sortie n'est pas linéaire en
+fonction de la distance, contrairement à ce qui est attendu. 
+
+\vspace{0.2cm}
+
+En remesurant des valeurs de tension en fonction de la distance à la cible pour plusieurs déphasages,
+il a été possible d'observer un comportement qui semblait linéaire pour un déphasage de 120°.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=15cm]{Images/Seance5/uout2.png}
+    \caption{Tension de sortie à déphasage 120°}
+    \label{fig:uout2}
+\end{figure}
+
+Le gain ainsi que la résistance $R_{13}$ ont ensuite été recalculés pour les valeurs mesurées :
+\begin{equation*}
+    |K_2| = \frac{10}{0.931} = 10.74
+\end{equation*}
+\begin{equation*}
+    R_{13} = \frac{R_{10}}{|K_2|}= \frac{10^4}{10.74}= 931\text{ }\Omega
+\end{equation*}
+
+Par manque de rigueur et une volonté de vitesse, une résistance d'une valeur de 1 k$\Omega$
+a été utilisée pour $R_{13}$. Le gain sera donc de 10 et la sensibilité devrait être de -9.31 V/mm.
+\vspace{0.2cm}
+
+Lors du réglage de l'offset, le potentiomètre ne permettant pas d'atteindre une tension de 0 V à
+0.7 mm, 180° ont été ajoutés au déphasage. Cette manipulation ne devrait pas changer le comportement
+du système autrement que de multiplier la sensibilité par -1, puisque le système est $\pi$ périodique.
+L'offset a ensuite pu être compensé.
+\vspace{0.2cm}
+
+La sensibilité devrait donc être de 9.31 V/mm.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=15cm]{Images/Seance5/uout3.png}
+    \caption{Tension de sortie à déphasage 300°}
+    \label{fig:uout3}
+\end{figure}
+
+Bien qu'il soit possible de voir que la tension réelle en fonction de la position n'est pas 
+parfaitement linéaire, cette dernière, à contrario de la première itération, s'en approche assez
+pour être utilisable.
 \subsection{Analyse}
 
 \subsection{Conclusion}
